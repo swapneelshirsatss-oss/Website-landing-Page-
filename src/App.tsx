@@ -16,6 +16,8 @@ import BookingForm from "./components/BookingForm";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import { RESORT_INFO } from "./data";
+import heroImage from "./assets/images/hero-mountain.jpg";
+import aboutImage from "./assets/images/pine-forest.jpg";
 import { 
   Compass, MapPin, Sparkles, Clock, GlassWater, 
   Map, CalendarClock, PhoneCall, Star, Waves
@@ -72,7 +74,7 @@ export default function App() {
             initial={{ opacity: 0, y: 50, x: "-50%" }}
             animate={{ opacity: 1, y: 0, x: "-50%" }}
             exit={{ opacity: 0, y: 20, x: "-50%" }}
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-stone-900 text-amber-400 px-6 py-3.5 rounded-full shadow-2xl border border-amber-500/20 text-xs tracking-wider uppercase font-bold flex items-center gap-2.5 backdrop-blur-md"
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-stone-900 text-amber-400 px-6 py-3.5 rounded-full shadow-2xl border border-amber-500/20 text-xs tracking-wider uppercase font-semibold flex items-center gap-2"
           >
             <Sparkles className="w-4.5 h-4.5 text-amber-400 animate-pulse" />
             <span>{toastMessage}</span>
@@ -89,9 +91,8 @@ export default function App() {
         {/* Full Screen Cinematic BG Image */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1920&q=82"
+            src={heroImage}
             alt="Whispering Pines Mukteshwar Hill Station Sanctuary"
-            referrerPolicy="no-referrer"
             className="w-full h-full object-cover opacity-80"
           />
           {/* Subtle slow ambient zoom filter overlay */}
@@ -132,14 +133,14 @@ export default function App() {
             <button
               id="hero-book-direct-btn"
               onClick={handleBookNowTrigger}
-              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest transition-all duration-300 shadow-xl shadow-stone-950/40 cursor-pointer"
+              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Select Your Sanctuary
             </button>
             <button
               id="hero-explore-suites-btn"
               onClick={() => scrollToSection("suites")}
-              className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/25 text-white px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest transition-colors backdrop-blur-xs cursor-pointer"
+              className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/25 text-white px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest transition-colors duration-300"
             >
               Explore Accommodation
             </button>
@@ -205,9 +206,8 @@ export default function App() {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden aspect-4/3 shadow-2xl border border-stone-200">
                 <img
-                  src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80"
+                  src={aboutImage}
                   alt="Pine Woodlands and Cozy Himalayan Cabin"
-                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-stone-900/10"></div>
@@ -279,4 +279,3 @@ export default function App() {
     </div>
   );
 }
-
