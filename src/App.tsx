@@ -15,6 +15,7 @@ import Accommodations from "./components/Accommodations";
 import BookingForm from "./components/BookingForm";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import GallerySection from "./components/GallerySection";
 import { RESORT_INFO } from "./data";
 import heroImage from "./assets/images/hero-mountain.jpg";
 import aboutImage from "./assets/images/pine-forest.jpg";
@@ -74,7 +75,7 @@ export default function App() {
             initial={{ opacity: 0, y: 50, x: "-50%" }}
             animate={{ opacity: 1, y: 0, x: "-50%" }}
             exit={{ opacity: 0, y: 20, x: "-50%" }}
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-stone-900 text-amber-400 px-6 py-3.5 rounded-full shadow-2xl border border-amber-500/20 text-xs tracking-wider uppercase font-semibold flex items-center gap-2"
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-stone-900 text-amber-400 px-6 py-3.5 rounded-full shadow-2xl border border-amber-500/20 text-xs tracking-wider uppercase fon[...]
           >
             <Sparkles className="w-4.5 h-4.5 text-amber-400 animate-pulse" />
             <span>{toastMessage}</span>
@@ -133,14 +134,14 @@ export default function App() {
             <button
               id="hero-book-direct-btn"
               onClick={handleBookNowTrigger}
-              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest transition-all duration-300 shadow-[...]
             >
               Select Your Sanctuary
             </button>
             <button
               id="hero-explore-suites-btn"
               onClick={() => scrollToSection("suites")}
-              className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/25 text-white px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest transition-colors duration-300"
+              className="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/25 text-white px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest transition-colors [...]
             >
               Explore Accommodation
             </button>
@@ -188,7 +189,7 @@ export default function App() {
             <button
               id="quick-check-btn"
               type="submit"
-              className="bg-stone-900 hover:bg-amber-800 text-white text-xs uppercase tracking-widest font-bold py-3.5 px-6 rounded-xl transition-all duration-300 font-sans cursor-pointer flex items-center gap-2"
+              className="bg-stone-900 hover:bg-amber-800 text-white text-xs uppercase tracking-widest font-bold py-3.5 px-6 rounded-xl transition-all duration-300 font-sans cursor-pointer flex it[...]
             >
               <CalendarClock className="w-4 h-4 text-amber-500" />
               <span>Verify Rates</span>
@@ -261,6 +262,9 @@ export default function App() {
 
       {/* Facilities/Amenities Section */}
       <Features />
+
+      {/* Gallery Section with your uploaded images */}
+      <GallerySection />
 
       {/* Suites / Villas Lists */}
       <Accommodations onSelectSuite={handleSelectSuite} />
