@@ -1,5 +1,18 @@
 import { ResortFeature, Accommodation, Testimonial, FAQItem } from './types';
 
+// Import local images
+import heroImage from './assets/images/hero-mountain.jpg';
+import aboutImage from './assets/images/pine-forest.jpg';
+import panoramicLawnImage from './assets/images/panoramic-lawn.jpg';
+import diningImage from './assets/images/bespoke-dining.jpg';
+import forestTrailsImage from './assets/images/forest-trails.jpg';
+import wellnessImage from './assets/images/wellness-spa.jpg';
+import superDeluxeImage from './assets/images/super-deluxe-room.jpg';
+import familyTwinImage from './assets/images/family-twin-room.jpg';
+import premiumVillaImage from './assets/images/premium-villa.jpg';
+import avatar1 from './assets/images/avatar-1.jpg';
+import avatar2 from './assets/images/avatar-2.jpg';
+
 export const RESORT_INFO = {
   name: "Whispering Pines Resort Mukteshwar",
   tagline: "Quiet wilderness, aromatic mountain breezes, and beautiful Himalayan ridges",
@@ -7,7 +20,7 @@ export const RESORT_INFO = {
   address: "Mukteshwar Road, Malla Ramgarh, Nainital, Uttarakhand 263137",
   email: "reservations@casadebello.com",
   phone: "+91 8218885881, +91 8553102670",
-  description: "Tucked away in the pristine oak and cedar-swathed hills of Malla Ramgarh on the scenic Mukteshwar Road, Whispering Pines Resort is a tranquil alpine sanctuary operating under Casa De Bello management. Featuring 22 units accommodating up to 70 guests, it offers towering forest canopies, majestic snow-covered peaks, customizable organic dining, and a 2,200 sqft scenic lawn facing the Nanda Devi range.",
+  description: "Tucked away in the pristine oak and cedar-swathed hills of Malla Ramgarh on the scenic Mukteshwar Road, Whispering Pines Resort is a tranquil alpine sanctuary operating under Casa De Bello management. Formerly known as Clarks Exotica, this reimagined luxury retreat offers premium hospitality at 7,500 feet altitude with breathtaking Nanda Devi Himalayan peak views."
 };
 
 export const RESORT_FEATURES: ResortFeature[] = [
@@ -17,8 +30,8 @@ export const RESORT_FEATURES: ResortFeature[] = [
     title: "The Panoramic Lawn",
     description: "A gorgeous 2200 sqft green lawn facing the majestic Nanda Devi Himalayan Range. Ideal for dream weddings, sunset cocktails, or scenic dinners.",
     badge: "2200 Sqft Event Space",
-    detailedText: "Our expansive premier outdoor scenic lawn looks directly out to the eternal snowy peaks. Whether you are hosting an intimate high-altitude mountain wedding, sunset social cocktails, or an atmospheric evening bonfire banquet, our dedicated team customizes every detail to build unforgettable memories.",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+    detailedText: "Our expansive premier outdoor scenic lawn looks directly out to the eternal snowy peaks. Whether you are hosting an intimate high-altitude mountain wedding, sunset social cocktails, or romantic dinner experiences, the Panoramic Lawn delivers unmatched views with world-class hospitality.",
+    image: panoramicLawnImage
   },
   {
     id: "premium-dining",
@@ -26,8 +39,8 @@ export const RESORT_FEATURES: ResortFeature[] = [
     title: "Bespoke Dining Area",
     description: "Savor premium multi-cuisine options, customizable event catering, and elegant indoor dining spaces managed on-ground.",
     badge: "Exceptional Culinary",
-    detailedText: "Let our professional kitchen and hospitality teams manage everything while you focus on relaxation. From customizable event menu options and grand outdoor dinner spreads to cozy buffet settings in elegant indoor dining spaces, we curate exceptional local and global culinary journeys.",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+    detailedText: "Let our professional kitchen and hospitality teams manage everything while you focus on relaxation. From customizable event menu options and grand outdoor dinner spreads to cozy indoor café experiences.",
+    image: diningImage
   },
   {
     id: "forest-trails",
@@ -35,8 +48,8 @@ export const RESORT_FEATURES: ResortFeature[] = [
     title: "Mountain Pine Forest Trails",
     description: "Venture deep into the tall cedar, oak, and whispering pine groves to truly disconnect from the busy world and reconnect with nature.",
     badge: "Eco-Adventure",
-    detailedText: "Located in the pure ecosystem of Malla Ramgarh, our retreat sits in the midst of pristine, whispering mountain forests. Enjoy guided morning hikes, peaceful forest immersion, birdwatching walks, and nature trails that promote profound high-altitude mental rejuvenation.",
-    image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80"
+    detailedText: "Located in the pure ecosystem of Malla Ramgarh, our retreat sits in the midst of pristine, whispering mountain forests. Enjoy guided morning hikes, peaceful forest immersion, bird watching, and nature photography experiences.",
+    image: forestTrailsImage
   },
   {
     id: "mountain-wellness",
@@ -44,8 +57,8 @@ export const RESORT_FEATURES: ResortFeature[] = [
     title: "Himalayan Peak Wellness",
     description: "A refined wellness retreat designed for complete tranquility, high-mountain spa treatments, and peaceful relaxation.",
     badge: "Holistic Health",
-    detailedText: "Restore your physical and mental balance through customized wellness treatments. Featuring fresh mountain herbs, soothing natural oils, and peaceful outdoor meditation sessions overlooking the deep blue valleys and golden Himalayan ridges.",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+    detailedText: "Restore your physical and mental balance through customized wellness treatments. Featuring fresh mountain herbs, soothing natural oils, and peaceful outdoor meditation sessions amidst nature.",
+    image: wellnessImage
   }
 ];
 
@@ -64,7 +77,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
       "Warm, hospitable designs accommodating up to 26 guests in total"
     ],
     amenities: ["Forest View", "Premium Bedding", "Free Wi-Fi", "Tea/Coffee Maker", "Heavy-Duty Heater", "Modern Geyser"],
-    image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80",
+    image: superDeluxeImage,
     rating: 4.8,
     views: "Whispering pine tree woods and forest valleys",
     sizeSqFt: 450
@@ -83,7 +96,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
       "Accommodates up to 16 guests across our 4 tailored family units"
     ],
     amenities: ["Twin Beds", "Living Alcove", "Valley Mist Views", "Televox Entertainment", "Private Balcony", "Premium Host Service"],
-    image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+    image: familyTwinImage,
     rating: 4.9,
     views: "Panoramic misty valley views from premium high vistas",
     sizeSqFt: 720
@@ -102,7 +115,7 @@ export const ACCOMMODATIONS: Accommodation[] = [
       "Accommodates up to 30 guests comfortably across 5 elite premium villas"
     ],
     amenities: ["360° Mountain Views", "Deck Terrace", "Coffee Machine", "Stone Fireplace Vibe", "Dedicated Concierge", "Elite Furnishings"],
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80",
+    image: premiumVillaImage,
     rating: 5.0,
     views: "Unprecedented snow-capped Himalayan Nanda Devi peak visibility",
     sizeSqFt: 1350
@@ -116,15 +129,15 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Delhi Travelers",
     quote: "A stunning escape from the city heat. Sitting by the stone fireplace in our Pine Vista cottage, sipping hot local masala chai as the temperature hit single digits, felt magical.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=82"
+    avatar: avatar1
   },
   {
     id: "2",
     name: "Rajesh K. Mehta",
     role: "Aviation Analyst & Photographer",
-    quote: "The snow-peak visibility from the Nanda Devi attic in early morning is unbelievable. Capturing the golden sun hitting the Himalayas, combined with their incredible Kumaoni pahadi food, is a memory of a lifetime.",
+    quote: "The snow-peak visibility from the Nanda Devi attic in early morning is unbelievable. Capturing the golden sun hitting the Himalayas, combined with their incredible Kumaoni pahadi food was the perfect trip.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=82"
+    avatar: avatar2
   }
 ];
 
@@ -133,18 +146,18 @@ export const FAQS: FAQItem[] = [
     id: "q1",
     category: "Arrival",
     question: "How do I reach Whispering Pines from Delhi?",
-    answer: "Whispering Pines is roughly an 8-hour drive from Delhi. Alternatively, you can take the Kathgodam Shatabdi Express train to Kathgodam Railway Station, which is only a 2.5-hour mountain drive from our resort. We can easily arrange a high-comfort private cab for your pickup."
+    answer: "Whispering Pines is roughly an 8-hour drive from Delhi. Alternatively, you can take the Kathgodam Shatabdi Express train to Kathgodam Railway Station, which is only a 2.5-hour mountain drive to our resort."
   },
   {
     id: "q2",
     category: "Policies",
     question: "Do you offer heating in all cottages?",
-    answer: "Yes. Given the crisp high-mountain winters in Mukteshwar, all our rooms and suites are equipped with state-of-the-art heavy-duty heaters. Our premium cottages also feature rustic wood fireplaces, and we supply seasoned firewood daily."
+    answer: "Yes. Given the crisp high-mountain winters in Mukteshwar, all our rooms and suites are equipped with state-of-the-art heavy-duty heaters. Our premium cottages also feature rustic wood-burning fireplaces."
   },
   {
     id: "q3",
     category: "Activities",
     question: "Are your foods and ingredients fully organic?",
-    answer: "Almost entirely! We cooperate with local Kumaoni cooperative farms in Ramgarh and harvest directly from our own resort plum, peach, and apple orchards. All spices are stone-ground on-site to preserve health benefits and authentic local flavor."
+    answer: "Almost entirely! We cooperate with local Kumaoni cooperative farms in Ramgarh and harvest directly from our own resort plum, peach, and apple orchards. All spices are stone-ground on-site."
   }
 ];
