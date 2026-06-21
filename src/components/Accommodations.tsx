@@ -34,7 +34,7 @@ export default function Accommodations({ onSelectSuite }: AccommodationsProps) {
             </h2>
             <div className="w-16 h-0.5 bg-amber-600/60 mt-4 mb-6"></div>
             <p className="text-stone-600 font-sans text-sm md:text-base leading-relaxed">
-              Timeless materials, private heated plunges, and clifftop terraces crafted to immerse you in coastal high-luxury living.
+              Rustic stone hearths, beautiful cedar timbers, and snow-capped Himalayan Peak views crafted to immerse you in high-mountain sanctuary living.
             </p>
           </div>
 
@@ -91,13 +91,11 @@ export default function Accommodations({ onSelectSuite }: AccommodationsProps) {
                     <span>{suite.rating.toFixed(1)}</span>
                   </div>
 
-                  {/* Pricing Badge */}
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <div className="text-2xl font-serif font-bold">
-                      €{suite.pricePerNight}
-                    </div>
-                    <div className="text-[10px] uppercase tracking-widest text-stone-200 font-medium font-sans">
-                      per luxury night
+                  {/* Pricing Placeholder Badge */}
+                  <div className="absolute bottom-4 left-4">
+                    <div className="text-[10px] uppercase tracking-widest text-amber-300 font-bold font-sans flex items-center gap-1.5 bg-stone-950/70 backdrop-blur-xs py-1 px-3 rounded-full">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                      On Inquiry
                     </div>
                   </div>
 
@@ -212,7 +210,7 @@ export default function Accommodations({ onSelectSuite }: AccommodationsProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white">
                   <span className="text-[10px] uppercase tracking-widest text-amber-400 font-bold mb-1">
-                    Vista Signature Room
+                    Whispering Pines Luxury Room
                   </span>
                   <h4 className="font-serif text-2xl tracking-tight mb-2">
                     {selectedSuiteInfo.name}
@@ -239,8 +237,9 @@ export default function Accommodations({ onSelectSuite }: AccommodationsProps) {
                     </button>
                   </div>
 
-                  <div className="text-2xl font-serif text-stone-900 font-bold mb-4">
-                    €{selectedSuiteInfo.pricePerNight} <span className="text-xs font-sans text-stone-500 uppercase tracking-widest font-medium">/ night</span>
+                  <div className="text-xs font-sans text-stone-500 uppercase tracking-widest font-bold mb-4 flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Enquire for Best Available Rates
                   </div>
 
                   <h5 className="font-sans text-xs uppercase tracking-widest font-bold text-stone-500 mb-3">

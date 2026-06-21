@@ -1,6 +1,6 @@
 {
-  "name": "Resort Landing Page",
-  "description": "A simple and elegant resort landing page with feature showcases and an interactive booking form.",
+  "name": "Whispering Pines Resort Mukteshwar",
+  "description": "An elegant mountain resort website featuring cedar wood cabins, organic Kumaoni cuisines, guided pine forest trails, and an offline-safe VIP booking form.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

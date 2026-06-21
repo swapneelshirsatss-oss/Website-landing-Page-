@@ -89,8 +89,8 @@ export default function App() {
         {/* Full Screen Cinematic BG Image */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1920&q=82"
-            alt="Vista Del Mar Cinematic Haven"
+            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1920&q=82"
+            alt="Whispering Pines Mukteshwar Hill Station Sanctuary"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover opacity-80"
           />
@@ -101,18 +101,6 @@ export default function App() {
         {/* Hero Copy Content */}
         <div className="relative max-w-5xl mx-auto px-4 md:px-8 text-center text-white mt-12">
           
-          {/* Subtle visual badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="flex items-center justify-center gap-2 text-amber-400 uppercase tracking-widest text-[10px] md:text-xs font-bold mb-6"
-          >
-            <Star className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
-            <span>Awarded European Hideaway of the Year</span>
-            <Star className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
-          </motion.div>
-
           {/* Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
@@ -120,8 +108,8 @@ export default function App() {
             transition={{ duration: 0.9, delay: 0.15 }}
             className="font-serif text-4xl sm:text-6xl md:text-8xl tracking-tight leading-none mb-6 font-medium text-stone-100"
           >
-            Refined Cliffside <br />
-            <span className="italic font-normal text-amber-200">Mediterranean Bliss</span>
+            Whispering Pines <br />
+            <span className="italic font-normal text-amber-200">by Casa De Bello</span>
           </motion.h1>
 
           {/* Tagline */}
@@ -217,8 +205,8 @@ export default function App() {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden aspect-4/3 shadow-2xl border border-stone-200">
                 <img
-                  src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80"
-                  alt="Clifftop Positano Dining Vibe"
+                  src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80"
+                  alt="Pine Woodlands and Cozy Himalayan Cabin"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
                 />
@@ -231,10 +219,10 @@ export default function App() {
                   {[1, 2, 3, 4, 5].map(n => <Star key={n} className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />)}
                 </div>
                 <p className="text-[11px] text-stone-700 italic font-serif leading-relaxed">
-                  "Unbelievable, an organic sanctuary of limestone balconies and vintage fine dining classics."
+                  "A sublime escape under the cedar whispers. Fresh Pahadi food, pristine views and stargazing were unforgettable."
                 </p>
                 <div className="text-[9px] uppercase tracking-widest font-bold text-stone-400 mt-2">
-                  Forbes Travel Guide
+                  Condé Nast Traveller India
                 </div>
               </div>
             </div>
@@ -245,7 +233,7 @@ export default function App() {
                 The Sanctuary
               </span>
               <h2 className="font-serif text-3xl md:text-5xl text-stone-950 tracking-tight leading-tight">
-                Vista Del Mar
+                Whispering Pines
               </h2>
               <p className="text-stone-700 text-sm md:text-base leading-relaxed font-sans">
                 {RESORT_INFO.description}
@@ -254,16 +242,16 @@ export default function App() {
               {/* Core quick values row */}
               <div className="grid grid-cols-3 gap-4 pt-4 border-t border-stone-200">
                 <div>
-                  <div className="text-xl md:text-3xl font-serif font-bold text-stone-900">180°</div>
-                  <div className="text-[10px] uppercase tracking-widest text-stone-450 mt-1">Panoramic Sea View</div>
-                </div>
-                <div>
-                  <div className="text-xl md:text-3xl font-serif font-bold text-stone-900">2-Star</div>
-                  <div className="text-[10px] uppercase tracking-widest text-stone-450 mt-1">Michelin Gastronomy</div>
+                  <div className="text-xl md:text-3xl font-serif font-bold text-stone-900">7,500 ft</div>
+                  <div className="text-[10px] uppercase tracking-widest text-stone-450 mt-1">Altitude Peaks</div>
                 </div>
                 <div>
                   <div className="text-xl md:text-3xl font-serif font-bold text-stone-900">100%</div>
-                  <div className="text-[10px] uppercase tracking-widest text-stone-450 mt-1">Private Cove Entry</div>
+                  <div className="text-[10px] uppercase tracking-widest text-stone-450 mt-1">Organic Himalayan Eats</div>
+                </div>
+                <div>
+                  <div className="text-xl md:text-3xl font-serif font-bold text-stone-900">Nanda Devi</div>
+                  <div className="text-[10px] uppercase tracking-widest text-stone-450 mt-1">Range Views</div>
                 </div>
               </div>
             </div>

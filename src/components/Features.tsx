@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { Umbrella, Sparkles, UtensilsCrossed, Waves, ArrowRight, X, Heart } from "lucide-react";
+import { Compass, Sparkles, UtensilsCrossed, Flame, Trees, ArrowRight, X, Heart } from "lucide-react";
 import { RESORT_FEATURES } from "../data";
 import { ResortFeature } from "../types";
 import { motion, AnimatePresence } from "motion/react";
 
 const IconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
-  Umbrella: Umbrella,
+  Compass: Compass,
   Sparkles: Sparkles,
   UtensilsCrossed: UtensilsCrossed,
-  Waves: Waves,
+  Flame: Flame,
+  Trees: Trees,
 };
 
 export default function Features() {
@@ -178,7 +179,7 @@ export default function Features() {
 
                 <div className="mt-8 pt-6 border-t border-stone-150 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="text-xs text-stone-500">
-                    Complimentary for all Vista Del Mar suite and villa bookings
+                    Complimentary for all Whispering Pines Resort luxury suite and cottage bookings
                   </div>
                   <button
                     id="feature-modal-close-action"

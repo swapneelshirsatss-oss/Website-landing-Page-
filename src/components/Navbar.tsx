@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Compass, Menu, X, PhoneCall, CalendarDays } from "lucide-react";
+import { Menu, X, PhoneCall, CalendarDays } from "lucide-react";
 import { RESORT_INFO } from "../data";
+import logoBanner from "../assets/images/brand_logo_banner_1782018064467.jpg";
 
 interface NavbarProps {
   onBookNowClick: () => void;
@@ -40,19 +41,16 @@ export default function Navbar({ onBookNowClick }: NavbarProps) {
         <button
           id="nav-logo-btn"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center gap-2 group text-left focus:outline-hidden"
+          className="flex items-center group text-left focus:outline-hidden"
         >
-          <div className={`p-2 rounded-full transition-colors duration-300 ${isScrolled ? "bg-amber-50 text-amber-800" : "bg-white/10 text-white"}`}>
-            <Compass className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500" />
-          </div>
-          <div>
-            <span className={`font-serif text-lg tracking-wider font-bold transition-colors ${isScrolled ? "text-stone-900" : "text-white"}`}>
-              VISTA DEL MAR
-            </span>
-            <span className={`block text-[9px] tracking-widest uppercase font-medium transition-colors ${isScrolled ? "text-amber-700" : "text-amber-200"}`}>
-              Amalfi Coast · Italy
-            </span>
-          </div>
+          <img
+            src={logoBanner}
+            alt="Whispering Pines by Casa De Bello"
+            referrerPolicy="no-referrer"
+            className={`h-11 md:h-12 object-contain rounded-sm transition-all duration-300 shadow-sm border border-stone-100 ${
+              isScrolled ? "brightness-100 opacity-100" : "opacity-95 hover:opacity-100"
+            }`}
+          />
         </button>
 
         {/* Desktop Navigation */}
@@ -145,9 +143,13 @@ export default function Navbar({ onBookNowClick }: NavbarProps) {
           className="md:hidden fixed top-0 left-0 w-full h-screen bg-stone-900/98 text-stone-50 z-40 flex flex-col justify-center px-10 py-20 pointer-events-auto transition-all duration-300"
         >
           <div className="flex justify-between items-center absolute top-5 left-0 right-0 px-4">
-            <div className="flex items-center gap-2">
-              <Compass className="w-5 h-5 text-amber-500" />
-              <span className="font-serif text-lg tracking-wider font-bold">VISTA DEL MAR</span>
+            <div className="flex items-center">
+              <img
+                src={logoBanner}
+                alt="Whispering Pines by Casa De Bello"
+                referrerPolicy="no-referrer"
+                className="h-10 object-contain rounded-md shadow-sm border border-stone-800"
+              />
             </div>
             <button
               id="close-mobile-drawer-btn"

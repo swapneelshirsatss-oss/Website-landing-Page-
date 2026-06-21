@@ -1,6 +1,7 @@
 import React from "react";
 import { RESORT_INFO } from "../data";
-import { Compass, Mail, Phone, MapPin, Sparkles } from "lucide-react";
+import { Mail, Phone, MapPin, Sparkles } from "lucide-react";
+import logoBanner from "../assets/images/brand_logo_banner_1782018064467.jpg";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -21,44 +22,39 @@ export default function Footer() {
             <button
               id="footer-logo-btn"
               onClick={scrollToTop}
-              className="flex items-center gap-2 group text-left focus:outline-hidden mb-4"
+              className="flex items-center group text-left focus:outline-hidden mb-4"
             >
-              <div className="p-2.5 rounded-full bg-white/5 text-amber-500 group-hover:rotate-45 transition-transform duration-500">
-                <Compass className="w-5 h-5" />
-              </div>
-              <div>
-                <span className="font-serif text-lg tracking-wider font-bold text-white block">
-                  VISTA DEL MAR
-                </span>
-                <span className="block text-[8px] tracking-widest uppercase font-semibold text-amber-500">
-                  Amalfi Coast · Italy
-                </span>
-              </div>
+              <img
+                src={logoBanner}
+                alt="Whispering Pines by Casa De Bello Logo"
+                referrerPolicy="no-referrer"
+                className="h-14 object-contain rounded-sm transition-all duration-350 shadow-md border border-stone-800"
+              />
             </button>
             <p className="text-xs text-stone-500 leading-relaxed font-sans">
-              Experience the quintessential cliffside Mediterranean escape. Designed for absolute solace, culinary excellence, and holistic wellness.
+              Experience a quintessential high-altitude Himalayan pine forest retreat. Designed for absolute tranquility, organic local culinary triumphs, and crisp mountain wellness.
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div className="space-y-4">
             <h4 className="text-xs uppercase tracking-widest font-bold text-white font-sans">
-              Discover Vista
+              Discover Pines
             </h4>
             <ul className="space-y-2 text-xs font-sans">
               <li>
                 <a href="#about" className="hover:text-amber-500 transition-colors">
-                  The Sanctuary & Grounds
+                  The Resort Sanctuary
                 </a>
               </li>
               <li>
                 <a href="#amenities" className="hover:text-amber-500 transition-colors">
-                  Beach Club & Elysium Resort Spa
+                  Forest Trails & Alpine Spa
                 </a>
               </li>
               <li>
                 <a href="#suites" className="hover:text-amber-500 transition-colors">
-                  Luxury Suites & Clifftop Villas
+                  Suites & Luxury Cottages
                 </a>
               </li>
               <li>
@@ -105,7 +101,7 @@ export default function Footer() {
                 <span className="font-bold uppercase tracking-wider font-sans text-[10px]">VIP Invitation</span>
               </div>
               <p className="text-[11px] text-stone-500 leading-relaxed">
-                Sign up for exclusive clifftop culinary and travel seasonal offers. We respect your complete privacy.
+                Sign up for exclusive mountain culinary and travel seasonal offers. We respect your complete privacy.
               </p>
               <form
                 onSubmit={(e) => {
@@ -135,7 +131,7 @@ export default function Footer() {
         {/* Separator */}
         <div className="border-t border-stone-850 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-500 font-sans">
           <div>
-            © {currentYear} {RESORT_INFO.name}. All European high-luxury rights reserved.
+            © {currentYear} {RESORT_INFO.name}. All premium mountain resort rights reserved.
           </div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-amber-500 transition-colors">
